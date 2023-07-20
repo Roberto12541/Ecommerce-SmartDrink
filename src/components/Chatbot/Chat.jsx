@@ -22,8 +22,8 @@ const Chat = () => {
     return (
         <ThemeProvider theme={theme}>
             <Chatbot
-                recognitionEnable = {true}
-                recognitionLang = {'es'}
+                // recognitionEnable={true}
+                // recognitionLang={'es'}
                 // cache = {true}
                 headerTitle="SmartBot"
                 userAvatar="https://cdn-icons-png.flaticon.com/512/6596/6596121.png"
@@ -86,8 +86,18 @@ const Chat = () => {
                     {
                         id: 'Productos',
                         message: '¿Qué productos deseas consultar?',
-                        trigger: 'opciones-productos',
+                        trigger: 'Opciones-Productos',
                         hideInput: true
+                    },
+                    {
+                        id: 'Opciones-Productos',
+                        options: [
+                            { value: 'Luces', label: 'Luces', trigger: () => history('/productos/Luces') },
+                            { value: 'Apagadores', label: 'Apagadores', trigger: () => history('/productos/Apagadores') },
+                            { value: 'Limpieza', label: 'Limpieza', trigger: () => history('/productos/Limpieza') },
+                            { value: 'Aire-Acondicionado', label: 'Aire-Acondicionado', trigger: () => history('/productos/Aire-Acondicionado') },
+                            { value: 'Enchufes', label: 'Enchufes', trigger: () => history('/productos/Enchufes') },
+                        ]
                     },
                     {
                         id: 'Opciones-Planes',
@@ -103,9 +113,23 @@ const Chat = () => {
                         ]
                     },
                     {
-                        id: 'Comprar/Cancelar',
+                        id: 'Comprar/CancelarBasico',
                         options: [
-                            { value: 'Comprar', label: 'Comprar', trigger: () => login ? history('/checkout/9200/SmartBasic') : history('/login') },
+                            { value: 'Comprar', label: 'Comprar', trigger: () => login ? history('/checkout/29999/SmartBasic') : history('/login') },
+                            { value: 'Volver', label: 'Volver', trigger: 'ayuda' }
+                        ]
+                    },
+                    {
+                        id: 'Comprar/CancelarInter',
+                        options: [
+                            { value: 'Comprar', label: 'Comprar', trigger: () => login ? history('/checkout/36999/SmartInter') : history('/login') },
+                            { value: 'Volver', label: 'Volver', trigger: 'ayuda' }
+                        ]
+                    },
+                    {
+                        id: 'Comprar/CancelarPro',
+                        options: [
+                            { value: 'Comprar', label: 'Comprar', trigger: () => login ? history('/checkout/49999/SmartPro') : history('/login') },
                             { value: 'Volver', label: 'Volver', trigger: 'ayuda' }
                         ]
                     },
@@ -117,7 +141,7 @@ const Chat = () => {
                     {
                         id: 'SmartBasic-Precio',
                         message: 'Precio: $29,999 MXN',
-                        trigger: 'Comprar/Cancelar'
+                        trigger: 'Comprar/CancelarBasico'
                     },
                     {
                         id: 'SmartInter',
@@ -126,7 +150,8 @@ const Chat = () => {
                     },
                     {
                         id: 'SmartInter-Precio',
-                        message: 'Precio: $37,000 MXN',
+                        message: 'Precio: $36,999 MXN',
+                        trigger: 'Comprar/CancelarInter'
                     },
                     {
                         id: 'SmartPro',
@@ -135,12 +160,8 @@ const Chat = () => {
                     },
                     {
                         id: 'SmartPro-Precio',
-                        message: 'Precio: $50,000 MXN',
-                    },
-                    {
-                        id: 'Productos',
-                        message: 'Productos',
-                        end: true
+                        message: 'Precio: $49,999 MXN',
+                        trigger: 'Comprar/CancelarPro'
                     },
                     {
                         id: 'Contacto',
