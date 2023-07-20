@@ -3,7 +3,7 @@ import carrito from '../../assets/carrito.png'
 
 const PromoProducts = () => {
   return (
-    <div className=' mt-20 flex flex-col md:flex-row md:gap-10 bg-black rounded-xl w-11/12 m-auto p-5'>
+    <div className=' mt-20 flex flex-col md:flex-row md:gap-10 bg-black rounded-xl w-11/12 m-auto p-5 justify-center' >
         <div className=' rounded-xl p-6  flex flex-col justify-center items-center  '>
             <h1 className='text-white text-3xl md:text-6xl   font-semibold md:text-6x1 text-center'>Productos</h1>
             <p className='text-white text-1xl font-sans mt-8 text-justify  md:text-3xl w-60 md:w-auto lg:w-auto md:pl-10'>Los mejores productos inteligentes para cambiar el ambiente donde te ubiques, 
