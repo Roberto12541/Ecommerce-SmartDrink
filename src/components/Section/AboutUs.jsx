@@ -5,7 +5,7 @@ const AboutUs = () => {
                 <div className="flex flex-col items-start bg-black justify-center px-4 py-24 lg:px-20">
                     <span className="mb-4 p-2 px-4 rounded-xl bg-white badge text-black font-semibold">SmartDrink</span>
                     <h1 className="mb-6 text-4xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">¿Quiénes somos?</h1>
-                    <p className="pr-0 mb-4 text-lg text-white tracking-relaxed text-justify lg:pr-16">Somos un equipo de jóvenes desarrolladores que buscan facilitar y agilizar la preparación de bebidas con métodos tecnológicos, ya que nuestro principal objetivo es lograr que nuestros clientes se posicionen entre los mejores siendo distintos y destacando entre los demás.
+                    <p className="pr-0 mb-4 text-lg text-white tracking-relaxed text-justify lg:pr-16">Somos un equipo de jóvenes desarrolladores que ofrecemos productos inteligentes a su disposición para mejorar el entorno en donde se encuentren asi mismo buscamos facilitar y agilizar la preparación de bebidas con métodos tecnológicos, ya que nuestro principal objetivo es lograr que nuestros clientes se posicionen entre los mejores siendo distintos y destacando entre los demás. 
                     </p>
                 </div>
                 <div>
@@ -21,7 +21,7 @@ const AboutUs = () => {
                     <p className="pr-0 mb-4 text-lg text-black tracking-relaxed text-justify lg:pr-24">
                         
                         
-                    Proporcionar a nuestros clientes la herramienta necesaria para cambiar y mejorar su experiencia en la preparación de bebidas. Nos esforzamos para superar las expectativas de nuestros clientes. </p>
+                    Proporcionar a nuestros clientes los mejores productos inteligentes y herramienta necesarias para cambiar y mejorar su experiencia en la preparación de bebidas. Nos esforzamos para superar las expectativas de nuestros clientes. </p>
                         <h1 className="mb-6 text-4xl font-bold leading-tight text-black md:text-4xl lg:text-5xl pt-10">Visión</h1>
                     <p className="pr-0 mb-4 text-lg text-black tracking-relaxed text-justify lg:pr-24">Ser reconocidos a nivel nacional e internacional siendo diferentes a los demás, teniendo la mejor calidad posible, para ofrecer nuestros servicios y productos de excelencia.</p>
                 </div>

@@ -11,11 +11,11 @@ const PromoService = () => {
                     <h1 className="text-black text-2xl mb-3 md:text-3xl lg:text-4xl md:mb-8 font-semibold text-center">Promoción servicio de instalación</h1>
                     <Link to={'/productos'}><img src={gif} alt="" /> </Link>
                   </div>
-                    <div className='' >
+                    <div className='flex flex-col ' >
                     <p className="text-black  mb-6  text-1xl w-60 text-justify lg:text-2xl lg:w-auto md:w-auto md:mb-10 ">A partir de $1500 MXN en compra el servicio de instalación es
                      <span className='text-red-600 font-bold'> GRATIS!</span> No te
                     pierdas de esta gran promoción!  </p> 
-                    <Link to={'/productos'} type="highlight" className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-white bg-black transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl hover:bg-white hover:border-black hover:text-black"> Comprar ahora </Link>
+                    <Link to={'/productos'} type="highlight" className="w-80 items-center block px-10 py-3.5 text-base font-medium text-center text-white bg-black transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl hover:bg-white hover:border-black hover:text-black"> Comprar ahora </Link>
                     </div>
                     
                     

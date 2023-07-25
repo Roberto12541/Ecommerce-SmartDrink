@@ -26,6 +26,12 @@ const Register = () => {
             setError('Las contraseñas no coinciden')
             return;
         }
+    let expresiones=/^[a-zA-Z8-9\_\-]{4,16}$/
+           
+        if(name === expresiones){
+            setError('Error en nombre')
+            return;
+        }
 
         const usuario = {
             name: name,
@@ -35,6 +41,7 @@ const Register = () => {
             email: email,
             password: password
         }
+        
 
         addDoc(collection(db, 'users'), usuario)
             .then((docRef) => {
@@ -83,17 +90,17 @@ const Register = () => {
                             </div>
 
                             <div className="col-span-6 sm:col-span-3">
-                                <label htmlFor="FirstName" required maxLength="20" className="block text-sm font-medium text-gray-700">
+                                <label htmlFor="FirstName"  className="block text-sm font-medium text-gray-700">
                                     Apellido paterno
                                 </label>
-                                <input type="text" id="FirstName" name="first_name" className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2 border" value={materno} onChange={(e) => setMaterno(e.target.value)} />
+                                <input type="text" id="FirstName" required maxLength="20" name="first_name" className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2 border" value={materno} onChange={(e) => setMaterno(e.target.value)} />
                             </div>
 
                             <div className="col-span-6 sm:col-span-3">
                                 <label htmlFor="LastName"required  maxLength="8" className="block text-sm font-medium text-gray-700">
                                     Fecha de Nacimiento
                                 </label>
-                                <input type="date" id="LastName" name="last_name" className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2 border" value={date} onChange={(e) => setDate(e.target.value)} />
+                                <input type="date" id="LastName"  name="last_name" className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2 border" value={date} onChange={(e) => setDate(e.target.value)} />
                             </div>
 
                             <div className="col-span-6">
