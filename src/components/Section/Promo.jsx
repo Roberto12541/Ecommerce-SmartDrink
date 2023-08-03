@@ -7,7 +7,7 @@ const Promo = () => {
                 <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                     <div className="sm:max-w-lg">
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            Cambiandooo la manera de preparar bebidas.
+                            Cambiando la manera de preparar bebidas.
                         </h1>
                         <p className="mt-6 text-xl text-gray-500 text-justify">
                             Comprometidos con la innovación, creatividad y servicio para que puedas brindar
