@@ -21,10 +21,8 @@ import Checkout from './components/Checkout/Checkout.jsx';
 import BannerThree from './components/Section/BannerThree.jsx';
 import Login from './components/Section/Login.jsx';
 import Register from './components/Register/Register.jsx';
-// import BannerFour from './components/Section/BannerFour.jsx';
 import PromoService from './components/Section/PromoService.jsx';
 import PromoProducts from './components/Section/PromoProducts.jsx';
-// import Chat from './components/Chatbot/Chat.jsx';
 import ButtonChat from './components/Chatbot/ButtonChat.jsx';
 
 function App() {
