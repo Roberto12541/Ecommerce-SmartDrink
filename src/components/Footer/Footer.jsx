@@ -16,7 +16,7 @@ const Footer = () => {
                     <div>
                         <p>
                             <span className="text-xs uppercase tracking-wide text-white">¿Tienes dudas?</span>
-                            <p href="#" className="block text-2xl font-medium text-white sm:text-3xl"> <a href="/nosotros#Contacto">Contáctanos</a></p>
+                            <span href="#" className="block text-2xl font-medium text-white sm:text-3xl"> <a href="/nosotros#Contacto">Contáctanos</a></span>
                         </p>
 
                         <ul className="mt-8 space-y-1 text-sm">
@@ -69,15 +69,15 @@ const Footer = () => {
                             <p className="font-medium text-white">Secciones</p>
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                <Link to={'/productos'} className="text-white transition hover:opacity-75">Productos</Link>
+                                    <Link to={'/productos'} className="text-white transition hover:opacity-75">Productos</Link>
                                 </li>
 
                                 <li>
-                                <Link to={'/servicios'} className="text-white transition hover:opacity-75">Servicios</Link>
+                                    <Link to={'/servicios'} className="text-white transition hover:opacity-75">Servicios</Link>
                                 </li>
 
                                 <li>
-                                <Link to={'/nosotros'} className="text-white transition hover:opacity-75">Contacto</Link>
+                                    <Link to={'/nosotros'} className="text-white transition hover:opacity-75">Contacto</Link>
                                 </li>
                             </ul>
                         </div>
@@ -86,16 +86,16 @@ const Footer = () => {
                             <p className="font-medium text-white">Nosotros</p>
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                <Link to={'/nosotros'} className="text-white transition hover:opacity-75">Quienes somos</Link>
+                                    <Link to={'/nosotros'} className="text-white transition hover:opacity-75">Quienes somos</Link>
                                 </li>
 
                                 <li>
-                                <Link to={'/nosotros'} className="text-white transition hover:opacity-75">Misión </Link>
-                                    
+                                    <Link to={'/nosotros'} className="text-white transition hover:opacity-75">Misión </Link>
+
                                 </li>
 
                                 <li>
-                                <Link to={'/nosotros'} className="text-white transition hover:opacity-75">Visión</Link>
+                                    <Link to={'/nosotros'} className="text-white transition hover:opacity-75">Visión</Link>
                                 </li>
                             </ul>
                         </div>
